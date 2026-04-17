@@ -251,7 +251,7 @@ IF @count > 0
 Begin
 EXEC msdb.dbo.sp_send_dbmail
     @profile_name = @profile,
-    @recipients = ''dba@vu.com'',
+    @recipients = ''dba@sixcolumnsolutions.com'',
     @subject =''Index Maintenance Failure'',
     @body = @html,
     @body_format = ''HTML'',

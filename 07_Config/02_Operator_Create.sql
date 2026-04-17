@@ -10,7 +10,7 @@ EXEC msdb.dbo.sp_add_operator @name=N'DBA Group',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'it_dba@veteransunited.com', 
+		@email_address=N'dba@sixcolumnsolutins.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
@@ -27,7 +27,7 @@ EXEC msdb.dbo.sp_add_operator @name=N'DBA_OnCall',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'it_dba@veteransunited.com; ', 
+		@email_address=N'dba@sixcolumnsolutions.com; ', 
 		@category_name=N'[Uncategorized]'
 GO
 

@@ -19,7 +19,7 @@ DECLARE @Display NVARCHAR(50)
 SET @Profile = (SELECT @@SERVERNAME)
 SET @Account = (SELECT @@SERVERNAME) + ' Alerts'
 SET @Email = REPLACE(@Profile, '-', '_')
-SET @Email = REPLACE(@Email, '\', '_') + '@VU.com'
+SET @Email = REPLACE(@Email, '\', '_') + '@sixcolumnsolutions.com'
 --SET @Display = RIGHT(@Profile, LEN(@Profile) - 7)
 SET @Display = REPLACE(@Profile, '-', ' ')
 SET @Display = REPLACE(@Display, '\', ' ') + ' Instance'
@@ -46,8 +46,8 @@ EXECUTE msdb.dbo.sysmail_add_account_sp
     @description = 'Alerts Email',
     @email_address = @Email,
     @display_name = @Display,
-	@replyto_address = 'it_dba@VU.com',
-    @mailserver_name = 'smtp.veteransunited.com'
+	@replyto_address = 'dba@sixcolumnsolutions.com',
+    @mailserver_name = 'smtp.sixcolumnsolutions.com'
 
 -- Add the Account to the Profile
 EXECUTE msdb.dbo.sysmail_add_profileaccount_sp
