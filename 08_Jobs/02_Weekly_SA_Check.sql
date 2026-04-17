@@ -1,7 +1,6 @@
 USE [msdb]
 GO
 
-/****** Object:  Job [Weekly SA Check]    Script Date: 2/20/2017 10:39:43 AM ******/
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
 SELECT @ReturnCode = 0
