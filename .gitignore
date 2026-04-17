@@ -1,0 +1,67 @@
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# Windows
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# VS Code / IDEs
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+*.out
+*.err
+
+# =========================
+# SQL Server / DBA stuff
+# =========================
+
+# Backups
+*.bak
+*.trn
+*.diff
+
+# Data / exports
+*.csv
+*.tsv
+*.xlsx
+
+# Temp SQL files
+*.tmp
+*.temp
+
+# SSMS / local artifacts
+*.sqlplan
+
+# =========================
+# Secrets / configs (be careful here)
+# =========================
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+secrets.json
+
+# =========================
+# OS / misc junk
+# =========================
+*.swp
+*.swo
+replace_vuhl_with_scs.py
+*~
