@@ -1,5 +1,7 @@
 
 
+
+
 USE [master]
 GO
 sp_configure 'show advanced options',1
@@ -76,6 +78,6 @@ DECLARE @PROFILE VARCHAR(MAX) = (SELECT name FROM dbo.sysmail_profile)
 DECLARE @bodytext VARCHAR(MAX) = 'SET UP DBMAIL for ' + @@servername 
 EXEC msdb.dbo.sp_send_dbmail  
     @profile_name = @profile,  
-    @recipients = 'dba@vu.com',  
+    @recipients = 'dba@sixcolumnsolutions.com',  
     @body = @bodytext,  
     @subject = 'Automated Success Message' ;  
