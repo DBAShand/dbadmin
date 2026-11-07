@@ -45,7 +45,7 @@ BEGIN
 END
 ELSE 
 BEGIN
-INSERT INTO #TempList SELECT DISTINCT(name) from dbadmin.scs.scs_vw_User_DBs
+INSERT INTO #TempList SELECT DISTINCT(name) from dbadmin.scs.scs_vw_SCS_User_DBs
 END
 
 SELECT * FROM #TempList

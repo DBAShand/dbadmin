@@ -64,7 +64,7 @@ DECLARE @databases TABLE
 						indexstats.avg_fragmentation_in_percent > 0
 						and indexstats.page_count > 1000
 						ORDER BY indexstats.avg_fragmentation_in_percent desc''
-    FROM dbadmin.scs.scs_vw_VU_User_DBs a
+    FROM dbadmin.scs.scs_vw_SCS_User_DBs a
 	JOIn  dbadmin.scs.scs_vw_DBInfoExtended b ON a. dbid = b.database_id AND Status = ''ONLINE''
        DECLARE @databasesCounter INT
        DECLARE @maxRowID_LSJobs INT
