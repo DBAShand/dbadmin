@@ -88,7 +88,7 @@ IF @JobCounter > 0
 Begin
 EXEC msdb.dbo.sp_send_dbmail
     @profile_name = @profile,
-    @recipients = ''dba@vu.com'',
+    @recipients = ''dba@sixcolumnsolutions.com'',
     @subject =''Job Disabled'',
     @body = @html,
     @body_format = ''HTML'',

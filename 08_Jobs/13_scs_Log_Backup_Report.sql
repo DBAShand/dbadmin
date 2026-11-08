@@ -61,7 +61,7 @@ join
 	, max(z.backup_start_date) as rbrecient_backup
 from dbadmin.scs.scs_vw_Backupinfo z
 join dbadmin.scs.scs_vw_DbInfo y on z.dbname = y.dbname
-join dbadmin.scs.scs_vw_VU_USER_DBs x on z.DBName = x.name
+join dbadmin.scs.scs_vw_SCS_USER_DBs x on z.DBName = x.name
 where y.AG_Role = 1
 group by z.dbname) as rb on a.dbname = rb.dbname
 where a.backup_type = ''''L'''' and datediff(hour,rb.rbrecient_backup,getdate()) > 4''
@@ -72,7 +72,7 @@ IF @count > 0
 Begin
 EXEC msdb.dbo.sp_send_dbmail
     @profile_name = @profile,
-    @recipients = ''dba@vu.com'',
+    @recipients = ''dba@sixcolumnsolutions.com'',
     @subject =''T-Log Backup Latency'',
     @body = @html,
     @body_format = ''HTML'',
